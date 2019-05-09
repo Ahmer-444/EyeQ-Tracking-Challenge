@@ -44,18 +44,18 @@ Run inference on the input video as
 Run the evaluation script as follows:
 	`./run_accuracy_test` or simply type `python3 eval_tracker.py -f txts/predictions.txt -g txts/masan_2_gt.txt`
 
-Output
-`
-ground_truth/frames: {1: 18832, 2: 4050, 3: 10613, 4: 9402, 5: 4925, 6: 3681, 7: 11934}
-Person accuracy 1 0.9929906542056075
-Person accuracy 2 0.9511111111111111
-Person accuracy 3 0.9234900593611608
-Person accuracy 4 0.8992767496277387
-Person accuracy 5 0.9723857868020305
-Person accuracy 6 0.967400162999185
-Person accuracy 7 0.9616222557399028
-Tracking accuracy 0.9526109685495339
-`
+#### Output
+	```
+	ground_truth/frames: {1: 18832, 2: 4050, 3: 10613, 4: 9402, 5: 4925, 6: 3681, 7: 11934} 
+	Person accuracy 1 0.9929906542056075 
+	Person accuracy 2 0.9511111111111111 
+	Person accuracy 3 0.9234900593611608 
+	Person accuracy 4 0.8992767496277387 
+	Person accuracy 5 0.9723857868020305 
+	Person accuracy 6 0.967400162999185 
+	Person accuracy 7 0.9616222557399028 
+	Tracking accuracy 0.9526109685495339 
+	```
 
 #### Pascal Evaluation Metrics
 Pascal's performance metrics have been computed for the current system to see how well our system is behaving. The graphs to these metrics have been placed under directory `accuracy_metrics_graphs/`.
