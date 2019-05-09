@@ -27,18 +27,21 @@ To run and get described output, run the script as:
 	Output: annotations/ , images/ , res_masan_2.mp4 (GT visualization)
 
 ### System Configuration
-Tensorflow's Object Detection API has been used to train the desired architecture. I have installed the requirements for the API and configure the machine with CUDA, Cudnn libraries for GPU acceleration. To get more details, please have a look at [Tensorflow's Object Detection API Instructions](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md)
+Tensorflow's Object Detection API has been used to train the desired architecture. I have installed the requirements for the API and configure the machine with CUDA, Cudnn libraries for GPU acceleration. To get more details, please have a look at [Tensorflow's Object Detection API Instructions](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md).
 
 ### Training
-Now, we have configured our system and have necessary files to start training for person tracker. To run the training job procedure, please visit [training documentation](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/running_locally.md)
+Now, we have configured our system and have necessary files to start training for person tracker. To run the training job procedure, please visit [training documentation](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/running_locally.md).
 
 ### Trained Model
 Please download the trained model from [here](https://drive.google.com/open?id=1uvKB4GIbf8_JJLPIj9SYs3AZaQOgYBmu) and place it in the ROOT project directory. It will be named as `output_inference_graph.pb`
 
 ### Video Inference
-Run inference on the input video as
+Run inference on the input video as:
+
 	`python3 person_tracker.py -i INPUT_VIDEO_PATH.mp4 -o OUTPUT_VIDEO_PATH.mp4`
+	
 	Output: predictions.txt (predicted bboxes and objects), OUTPUT_VIDEO_PATH.mp4 (contains visualization of tracking)
+ 
 
 ### Evaluation
 Run the evaluation script as follows:
@@ -64,3 +67,6 @@ The type of graphs are:
 2. Performance by Category - AP @ 0.5IoU (close to 1)
 
 Please visit [Pascal Performance Metrics](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/evaluation_protocols.md) for more details.
+
+## Inference Video
+Have a look at tracking results [online](https://drive.google.com/open?id=1pzvzf8e1M04qVp2-hecSrZ8Rz-h9rsIl).
