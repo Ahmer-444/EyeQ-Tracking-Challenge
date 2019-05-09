@@ -1,0 +1,1 @@
+python3 eval_tracker.py -f txts/predictions.txt -g txts/masan_2_gt.txt
